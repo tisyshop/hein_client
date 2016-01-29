@@ -1,0 +1,28 @@
+body {
+	background: #4a5567;
+	background: linear-gradient(to right, #4c576d, #444f63);
+}
+
+#login {
+	color: #ffffff;
+	text-align: center;
+}
+
+#welcome-message {
+	margin-top: 8vh;
+	margin-bottom: 14vh;
+}
+
+#welcome-message h1 {
+	margin-bottom: 4vh;
+}
+
+#welcome-message h1 small {
+	color: #cacaca;
+}
+
+#signin-form-username input {
+	font-size: 3vh;
+	line-height: 4vh;
+	width: 80%;
+}

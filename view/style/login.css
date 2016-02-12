@@ -6,23 +6,104 @@ body {
 #login {
 	color: #ffffff;
 	text-align: center;
+	margin-top: 10vh;
 }
 
 #welcome-message {
-	margin-top: 8vh;
+	margin-top: 0px;
 	margin-bottom: 14vh;
 }
 
 #welcome-message h1 {
+	margin-top: 0px;
 	margin-bottom: 4vh;
+	font-size: 6vh;
 }
 
 #welcome-message h1 small {
 	color: #cacaca;
 }
 
+#signin-form-username {
+	width: 80vw;
+	margin: auto;
+}
+
+#signin-form-username .username-icon {
+	height: 10vw;
+	width: 10vw;
+	margin: 0px;
+	float: left;
+	border-style: solid;
+	border-radius: 4px 0px 0px 4px;
+	border-width: 2px;
+	border-right-width: 0px;
+	border-bottom-color: #36A989;
+	border-top-color: #46B7B2;
+	border-left-color: #67DCC1;
+	background-color: #25d5c6;
+}
+
+#signin-form-username .username-icon span {
+	font-size: 5vw;
+	margin-top: 2vw;
+	margin: auto;
+	color: #d8d8d8;
+}
+
 #signin-form-username input {
 	font-size: 3vh;
 	line-height: 4vh;
-	width: 80%;
+	height: 10vw;
 }
+
+#signin-form-username input[type="submit"] {
+	width: 80vw;
+	border-radius: 4px;
+	border-style: none;
+	background-color: #25d5c6;
+}
+
+#signin-form-username input[type="text"] {
+	width: 70vw;
+	padding-left: 5px;
+	border-style: solid;
+	border-radius: 0px 4px 4px 0px;
+	border-width: 2px;
+	border-color: #cacaca;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-bottom: 8vw;
+}
+
+@media (orientation: landscape)
+{
+	#signin-form-username {
+		width: 50vw;
+	}
+
+	#signin-form-username .username-icon {
+		height: 5vw;
+		width: 5vw;
+	}	
+
+	#signin-form-username .username-icon span {
+		font-size: 2.5vw;
+		margin-top: 1vw;
+	}
+
+	#signin-form-username input {
+		font-size: 3vh;
+		line-height: 4vh;
+		height: 5vw;
+	}
+
+	#signin-form-username input[type="submit"] {
+		width: 50vw;
+	}
+
+	#signin-form-username input[type="text"] {
+		width: 45vw;
+		margin-bottom: 5vw;
+	}
+}
+

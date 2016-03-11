@@ -1,8 +1,21 @@
-
+body {
+    background: #4a5567;
+    background: linear-gradient(to right, #4c576d, #444f63);
+}
 
 #pg-960{
 
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    /*  width: 960px;
+     margin-left: auto;
+    margin-right: auto;*/
+
+    margin-left: 10px;
+    width: 75%;
+}
+
+#right{
+    float: right;
+    margin-right: 30px;
+    width: 250px;
+
 }

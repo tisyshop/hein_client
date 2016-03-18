@@ -1,10 +1,7 @@
-body {
-	background: #4a5567;
-	background: linear-gradient(to right, #4c576d, #444f63);
-}
+@import "partials/variables";
 
 #login {
-	color: #ffffff;
+	color: $text-color;
 	text-align: center;
 	margin-top: 10vh;
 }
@@ -21,12 +18,7 @@ body {
 }
 
 #welcome-message h1 small {
-	color: #cacaca;
-}
-
-#signin-form-username {
-	width: 80vw;
-	margin: auto;
+	color: lighten($text-color, 20%);
 }
 
 #signin-form-username .username-icon {
@@ -38,17 +30,17 @@ body {
 	border-radius: 4px 0px 0px 4px;
 	border-width: 2px;
 	border-right-width: 0px;
-	border-bottom-color: #36A989;
-	border-top-color: #46B7B2;
-	border-left-color: #67DCC1;
-	background-color: #25d5c6;
+	border-bottom-color: $accent-color-low;
+	border-top-color: lighten($accent-color, 5%);
+	border-left-color: $accent-color-high;
+	background-color: $accent-color;
 }
 
 #signin-form-username .username-icon span {
 	font-size: 5vw;
 	margin-top: 2vw;
 	margin: auto;
-	color: #d8d8d8;
+	color: lighten($text-color, 20%);
 }
 
 #signin-form-username input {
@@ -61,16 +53,16 @@ body {
 	width: 80vw;
 	border-radius: 4px;
 	border-style: none;
-	background-color: #25d5c6;
+	background-color: $accent-color;
 }
 
 #signin-form-username input[type="text"] {
 	width: 70vw;
-	padding-left: 5px;
+	padding-left: 1em;
 	border-style: solid;
 	border-radius: 0px 4px 4px 0px;
 	border-width: 2px;
-	border-color: #cacaca;
+	border-color: $accent-color;
 	background-color: rgba(255, 255, 255, 0.1);
 	margin-bottom: 8vw;
 }
@@ -79,6 +71,7 @@ body {
 {
 	#signin-form-username {
 		width: 50vw;
+		margin-left: 25vw;
 	}
 
 	#signin-form-username .username-icon {
@@ -104,6 +97,18 @@ body {
 	#signin-form-username input[type="text"] {
 		width: 45vw;
 		margin-bottom: 5vw;
+	}
+}
+
+@media (orientation: portrait)
+{
+	#signin-form-username {
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+
+	#signin-form-username .username-icon span {
+		margin-top: 2vw;
 	}
 }
 

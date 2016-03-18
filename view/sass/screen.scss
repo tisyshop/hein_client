@@ -4,3 +4,9 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "partials/variables";
+
+body {
+	background: $background-color;
+	background: linear-gradient(to right, lighten($background-color, 10%), darken($background-color, 5%));
+}

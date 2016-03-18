@@ -1,0 +1,6 @@
+// Color scheme 
+$background-color: #4a5567;
+$text-color: #fff;
+$accent-color: #46b7b2;
+$accent-color-high: adjust-color($accent-color, $blue: -15);
+$accent-color-low: adjust-color($accent-color, $blue: 5);

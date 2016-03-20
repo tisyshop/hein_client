@@ -1,0 +1,28 @@
+<div id="signup">
+    <div ng-if="currentStep === '1'">
+        <div id="welcome-message">
+            <h1>Bonjour !</h1>
+            <h1><small>Comment vous appelez-vous ?</small></h1>
+        </div>
+        <!--    name form-->
+        <form novalidate ng-submit="submit()" class="signin-form-username">
+            <div class="username-icon"><span class="glyphicon glyphicon-user"></span></div>
+            <input ng-model="user.name" type="text" placeholder="Entrez un nom d'utilisateur..."/>
+            <div ng-click="submit()" class="button button-fullwidth">Suivant</div>
+        </form>
+    </div>
+         
+    <div ng-if="currentStep === '2'">
+        <div id="welcome-message">
+            <h1>Bonjour, {{user.name}} !</h1>
+            <h1><small>Quelle langue parlez-vous ?</small></h1>
+        </div>
+        <!--spoken langages form-->
+        <form novalidate ng-submit="submit()" class="signin-form-username">
+            <div class="username-icon"><span class="glyphicon glyphicon-comment"></span></div>
+            <input ng-model="user.spokenLanguages[0]" type="text" placeholder="Entrez votre langue maternelle..."/>
+            <div ng-click="back()" class="button button-left">Précédent</div>
+            <div ng-click="submit()" class="button button-right">Suivant</div>
+        </form>
+    </div>
+</div>

@@ -13,20 +13,27 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="../stylesheets/screen.css"></link>
-	<link rel="stylesheet" href="../stylesheets/login.css"></link>
+	<link rel="stylesheet" href="../stylesheets/signup.css"></link>
+
+    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.js"></script>
+
+    <!--app-->
+    <script src="app/app.js"></script>
+
+    <!--controllers-->
+    <script src="components/signup/signupController.js"></script>
+    <script src="components/users/usersController.js"></script>
+
+    <!--Services-->
+    <script src="components/signup/signupService.js"></script>
+    
 
 </head>
-<body>
-      	<div id="login">
-		<div id="welcome-message">
-			<h1>Bonjour !</h1>
-			<h1><small>Comment vous appelez-vous ?<small></h1>
-		</div>
-		<div id="signin-form-username">
-			<div class="username-icon"><span class="glyphicon glyphicon-user"></span></div>
-			<input type="text" placeholder="Entrez un nom d'utilisateur..."/>
-			<input type="submit" value="Suivant" />
-		</div>
-	</div>
+<body  ng-app="heinModule">
+    <div ui-view></div>
 </body>
 </html>

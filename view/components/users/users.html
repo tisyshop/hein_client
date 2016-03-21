@@ -20,6 +20,11 @@ body {
     width: 250px;
 
 }
+    
+    .thumbnail {
+        width: 100px;
+        height: 100px;
+    }
 
 </style>
 
@@ -53,7 +58,7 @@ body {
         <div class="row">
 
             <div class="col-md-2" ng-repeat="user in users">
-                <img src="../resources/images/users/{{user.picture}}" class="thumbnail">
+                <img src="../resources/images/icons/{{user.picture}}" class="thumbnail">
 
                 <div class="col-md-12">
                     <span>{{user.username}}</span>

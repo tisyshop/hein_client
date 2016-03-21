@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="userModule">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../style/style.css" type="text/css"/>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-    <script src="../controller/userController.js"></script>
-
-</head>
-
-<body>
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -88,7 +63,7 @@
     <div class="panel panel-primary">
        <!-- <div class="panel-heading ">Ces utilisateurs semblent pouvoir vous aider...</div>-->
 
-        <div class="row" ng-controller="userController">
+        <div class="row">
 
             <div class="col-md-2" ng-repeat="user in users">
                 <img src="../resources/images/users/{{user.picture}}" class="thumbnail">
@@ -105,8 +80,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:" {{user.skp}}?call" />
-                    <img role="Button" src="../resources/images/icons/call.png" width="16px">
+                    <a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype: {{user.skp}}?call">
+                        <img role="Button" src="../resources/images/icons/call.png" width="16px">
                     </a>
                 </div>
 
@@ -118,5 +93,3 @@
 
     <button type="button" class="btn btn-primary">view all</button>
 </div>
-</body>
-</html>

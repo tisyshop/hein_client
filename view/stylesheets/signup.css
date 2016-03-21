@@ -1,0 +1,140 @@
+/* line 3, ../sass/signup.scss */
+#signup {
+  color: #fff;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+/* line 9, ../sass/signup.scss */
+#welcome-message {
+  margin-top: 0px;
+  margin-bottom: 14vh;
+}
+/* line 12, ../sass/signup.scss */
+#welcome-message h1 {
+  margin-top: 0px;
+  margin-bottom: 4vh;
+  font-size: 6vh;
+}
+/* line 16, ../sass/signup.scss */
+#welcome-message h1 small {
+  color: white;
+}
+
+/* line 23, ../sass/signup.scss */
+.signin-form-username input, .signin-form-username .button {
+  font-size: 3vh;
+  height: 10vw;
+  line-height: 10vw;
+}
+/* line 28, ../sass/signup.scss */
+.signin-form-username input[type="text"] {
+  width: 70vw;
+  padding-left: 1em;
+  border-style: solid;
+  border-radius: 0px 4px 4px 0px;
+  border-width: 2px;
+  border-color: #46b7b2;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8vw;
+}
+/* line 38, ../sass/signup.scss */
+.signin-form-username .button {
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #46b7b2;
+  text-align: center;
+}
+/* line 45, ../sass/signup.scss */
+.signin-form-username .button-fullwidth {
+  width: 80vw;
+}
+/* line 48, ../sass/signup.scss */
+.signin-form-username .button-left {
+  width: 39vw;
+  display: inline-block;
+  float: left;
+}
+/* line 53, ../sass/signup.scss */
+.signin-form-username .button-right {
+  width: 39vw;
+  margin-left: 40.5vw;
+  text-align: center;
+}
+/* line 58, ../sass/signup.scss */
+.signin-form-username .username-icon {
+  height: 10vw;
+  width: 10vw;
+  margin: 0px;
+  float: left;
+  border-style: solid;
+  border-radius: 4px 0px 0px 4px;
+  border-width: 2px;
+  border-right-width: 0px;
+  border-bottom-color: #46b7b7;
+  border-top-color: #58bfba;
+  border-left-color: #46b7a3;
+  background-color: #46b7b2;
+}
+/* line 71, ../sass/signup.scss */
+.signin-form-username .username-icon span {
+  font-size: 5vw;
+  margin-top: 2vw;
+  margin: auto;
+  color: white;
+}
+
+@media (orientation: landscape) {
+  /* line 82, ../sass/signup.scss */
+  .signin-form-username {
+    width: 50vw;
+    margin-left: 25vw;
+  }
+  /* line 85, ../sass/signup.scss */
+  .signin-form-username input, .signin-form-username .button {
+    font-size: 3vh;
+    height: 5vw;
+    line-height: 5vw;
+  }
+  /* line 90, ../sass/signup.scss */
+  .signin-form-username input[type="text"] {
+    width: 45vw;
+    margin-bottom: 5vw;
+  }
+  /* line 94, ../sass/signup.scss */
+  .signin-form-username .button-fullwidth {
+    width: 50vw;
+  }
+  /* line 97, ../sass/signup.scss */
+  .signin-form-username .button-left {
+    width: 24vw;
+  }
+  /* line 100, ../sass/signup.scss */
+  .signin-form-username .button-right {
+    width: 24vw;
+    margin-left: 25.5vw;
+  }
+  /* line 104, ../sass/signup.scss */
+  .signin-form-username .username-icon {
+    height: 5vw;
+    width: 5vw;
+  }
+  /* line 107, ../sass/signup.scss */
+  .signin-form-username .username-icon span {
+    font-size: 2.5vw;
+    margin-top: 1vw;
+  }
+}
+@media (orientation: portrait) {
+  /* line 117, ../sass/signup.scss */
+  .signin-form-username {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  /* line 122, ../sass/signup.scss */
+  .signin-form-username .username-icon span {
+    margin-top: 2vw;
+  }
+}

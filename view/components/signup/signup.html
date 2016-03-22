@@ -15,13 +15,17 @@
     <div ng-if="currentStep === '2'">
         <div id="welcome-message">
             <h1>Bonjour, {{user.name}} !</h1>
-            <h1><small>Quelle langue parlez-vous ?</small></h1>
+            <h1><small>Quelles langues parlez-vous ?</small></h1>
         </div>
-        <!--spoken langages form-->
+        <!--Spoken languages list-->
+        <div class="tag-list">
+            <span class="tag" ng-repeat="language in user.spokenLanguages track by $index">{{language}}&nbsp;<span class="glyphicon glyphicon-remove-circle" ng-click="removeTag($index)"></span></span>
+        </div>
+        <!--spoken languages form-->
         <form novalidate ng-submit="submit()" class="signin-form-username">
             <div class="username-icon"><span class="glyphicon glyphicon-comment"></span></div>
-            <input ng-model="user.spokenLanguages[0]" type="text" placeholder="Entrez votre langue maternelle..."/>
-            <div ng-click="back()" class="button button-left">Précédent</div>
+            <input ng-model="user.newLanguage" type="text" placeholder="Entrez une langue..."/>
+            <div ng-click="backToStep(1)" class="button button-left">Précédent</div>
             <div ng-click="submit()" class="button button-right">Suivant</div>
         </form>
     </div>

@@ -5,10 +5,10 @@
             <h1><small>Comment vous appelez-vous ?</small></h1>
         </div>
         <!--    name form-->
-        <form novalidate ng-submit="submit()" class="signin-form-username">
+        <form novalidate ng-submit="submitStep1()" class="signin-form-username">
             <div class="username-icon"><span class="glyphicon glyphicon-user"></span></div>
             <input ng-model="user.name" type="text" placeholder="Entrez un nom d'utilisateur..."/>
-            <div ng-click="submit()" class="button button-fullwidth">Suivant</div>
+            <div ng-click="submitStep1()" class="button button-fullwidth">Suivant</div>
         </form>
     </div>
          
@@ -22,7 +22,7 @@
             <span class="tag" ng-repeat="language in user.spokenLanguages track by $index">{{language}}&nbsp;<span class="glyphicon glyphicon-remove-circle" ng-click="removeTag($index)"></span></span>
         </div>
         <!--spoken languages form-->
-        <form novalidate ng-submit="submit()" class="signin-form-username">
+        <form novalidate ng-submit="submitStep2()" class="signin-form-username">
             <div class="username-icon"><span class="glyphicon glyphicon-comment"></span></div>
             <input ng-model="user.newLanguage" type="text" placeholder="Entrez une langue..."/>
             <div ng-click="goToStep(1)" class="button button-left">Précédent</div>

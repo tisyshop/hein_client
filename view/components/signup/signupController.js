@@ -1,8 +1,8 @@
 angular.module("heinModule")
 .controller("signupController", function ($scope, $state, $stateParams, signupService) {
-    if (parseInt($stateParams.stepId) < 1 || parseInt($stateParams.stepId) > 4) {
-        $state.go(signup, {stepId: 1});
-    }
+    if (!signupService.checkStep(parseInt($stateParams.stepId))) {
+        $state.go('signup', {stepId: 1});
+    };
     
     $scope.currentStep = $stateParams.stepId;
     $scope.user = signupService.getUser();

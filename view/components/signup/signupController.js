@@ -1,5 +1,5 @@
 angular.module("heinModule")
-.controller("signupController", function ($scope, $state, $stateParams, signupService) {
+.controller("signupController", function ($scope, $timeout, $state, $stateParams, signupService) {
     
     // Check the step given
     if (!signupService.checkStep(parseInt($stateParams.stepId))) {
@@ -10,6 +10,11 @@ angular.module("heinModule")
     // Set the controller state's parameters
     $scope.currentStep = $stateParams.stepId;
     $scope.user = signupService.getUser();
+    
+    // timeout in order to wait for the html to be fully calculated before trying to focus any input
+    $timeout(function() {
+        document.getElementById("inputStep" + $scope.currentStep).focus();
+    })
     
     /*
      * Step 1 methods

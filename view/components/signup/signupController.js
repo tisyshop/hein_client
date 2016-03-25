@@ -14,14 +14,14 @@ angular.module("heinModule")
     // timeout in order to wait for the html to be fully calculated before trying to focus any input
     $timeout(function() {
         document.getElementById("inputStep" + $scope.currentStep).focus();
-    })
+    });
     
     /*
      * Step 1 methods
      */
     $scope.submitStep1 = function() {
         $scope.goToStep(2);
-    }
+    };
     
     /*
      * Step 2 methods
@@ -50,6 +50,6 @@ angular.module("heinModule")
         }
         
         $state.go($state.current, {stepId: targetStep});
-    }
+    };
 
 });

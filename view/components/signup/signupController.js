@@ -13,6 +13,9 @@ angular.module("heinModule")
     
     $scope.submit = function () {
         if ($scope.currentStep == 2) {
+            if (!$scope.user.newLanguage) {
+                return;
+            }
             $scope.user.spokenLanguages.push(angular.copy($scope.user.newLanguage));
             $scope.user.newLanguage = "";
             return;

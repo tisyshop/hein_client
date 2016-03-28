@@ -98,8 +98,11 @@
 }
 /* line 86, ../sass/signup.scss */
 .tag-list .tag {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   display: inline-block;
-  cursor: pointer;
+  cursor: default;
   border-radius: 4px;
   border-style: none;
   background-color: #46b7b2;
@@ -107,60 +110,60 @@
   padding: 5px;
   margin: 5px;
 }
-/* line 95, ../sass/signup.scss */
+/* line 98, ../sass/signup.scss */
 .tag-list .tag .glyphicon {
   cursor: pointer;
 }
 
 @media (orientation: landscape) {
-  /* line 104, ../sass/signup.scss */
+  /* line 107, ../sass/signup.scss */
   .signin-form-username {
     width: 50vw;
     margin-left: 25vw;
   }
-  /* line 107, ../sass/signup.scss */
+  /* line 110, ../sass/signup.scss */
   .signin-form-username input, .signin-form-username .button {
     font-size: 3vh;
     height: 5vw;
     line-height: 5vw;
   }
-  /* line 112, ../sass/signup.scss */
+  /* line 115, ../sass/signup.scss */
   .signin-form-username input[type="text"] {
     width: 45vw;
     margin-bottom: 5vw;
   }
-  /* line 116, ../sass/signup.scss */
+  /* line 119, ../sass/signup.scss */
   .signin-form-username .button-fullwidth {
     width: 50vw;
   }
-  /* line 119, ../sass/signup.scss */
+  /* line 122, ../sass/signup.scss */
   .signin-form-username .button-left {
     width: 24vw;
   }
-  /* line 122, ../sass/signup.scss */
+  /* line 125, ../sass/signup.scss */
   .signin-form-username .button-right {
     width: 24vw;
     margin-left: 25.5vw;
   }
-  /* line 126, ../sass/signup.scss */
+  /* line 129, ../sass/signup.scss */
   .signin-form-username .username-icon {
     height: 5vw;
     width: 5vw;
   }
-  /* line 129, ../sass/signup.scss */
+  /* line 132, ../sass/signup.scss */
   .signin-form-username .username-icon span {
     font-size: 2.5vw;
     margin-top: 1vw;
   }
 }
 @media (orientation: portrait) {
-  /* line 139, ../sass/signup.scss */
+  /* line 142, ../sass/signup.scss */
   .signin-form-username {
     margin-left: 10vw;
     margin-right: 10vw;
   }
 
-  /* line 144, ../sass/signup.scss */
+  /* line 147, ../sass/signup.scss */
   .signin-form-username .username-icon span {
     margin-top: 2vw;
   }

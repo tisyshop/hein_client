@@ -7,7 +7,7 @@
         <!--    name form-->
         <form novalidate ng-submit="submitStep1()" class="signin-form-username">
             <div class="username-icon"><span class="glyphicon glyphicon-user"></span></div>
-            <input ng-model="user.name" type="text" placeholder="Entrez un nom d'utilisateur..."/>
+            <input id="inputStep1" ng-model="user.name" type="text" placeholder="Entrez un nom d'utilisateur..."/>
             <div ng-click="submitStep1()" class="button button-fullwidth">Suivant</div>
         </form>
     </div>
@@ -24,7 +24,7 @@
         <!--spoken languages form-->
         <form novalidate ng-submit="submitStep2()" class="signin-form-username">
             <div class="username-icon"><span class="glyphicon glyphicon-comment"></span></div>
-            <input ng-model="user.newLanguage" type="text" placeholder="Entrez une langue..."/>
+            <input id="inputStep2" ng-model="user.newLanguage" type="text" placeholder="Entrez une langue..."/>
             <div ng-click="goToStep(1)" class="button button-left">Précédent</div>
             <div ng-click="goToStep(3)" class="button button-right">Suivant</div>
         </form>

@@ -96,3 +96,8 @@ fabric.properties
 
 # Sass cache
 view/.sass-cache/
+
+# Apache security settings
+**/.htaccess
+**/.htpasswd
+
